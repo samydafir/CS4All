@@ -1,0 +1,694 @@
+./selfie: this is selfie's starc compiling test_lock.c
+./selfie: 796 characters read in 28 lines and 8 comments
+./selfie: with 114(14.32%) characters in 65 actual symbols
+./selfie: 0 global variables, 2 procedures, 0 string literals
+./selfie: 11 calls, 0 assignments, 0 while, 0 if, 1 return
+./selfie: 640 bytes generated with 159 instructions and 4 bytes of data
+./selfie: 640 bytes with 159 instructions and 4 bytes of data written into test_lock1.m
+./selfie: this is selfie's mipster executing test_lock1.m with 10MB of physical memory
+test_lock1.m: $pc=0x0(~1): 0x2408027C: addiu $t0,$zero,636: $t0=0,$zero=0 -> $t0=636
+test_lock1.m: $pc=0x4(~1): 0x251C0000: addiu $gp,$t0,0: $gp=636,$t0=636 -> $gp=636
+test_lock1.m: $pc=0x8(~1): 0x00000000: nop
+test_lock1.m: $pc=0xC(~1): 0x00000000: nop
+test_lock1.m: $pc=0x10(~1): 0x00000000: nop
+test_lock1.m: $pc=0x14(~1): 0x00000000: nop
+test_lock1.m: $pc=0x18(~1): 0x00000000: nop
+test_lock1.m: $pc=0x1C(~1): 0x00000000: nop
+test_lock1.m: $pc=0x20(~1): 0x00000000: nop
+test_lock1.m: $pc=0x24(~1): 0x00000000: nop
+test_lock1.m: $pc=0x28(~1): 0x00000000: nop
+test_lock1.m: $pc=0x2C(~1): 0x00000000: nop
+test_lock1.m: $pc=0x30(~1): 0x00000000: nop
+test_lock1.m: $pc=0x34(~1): 0x00000000: nop
+test_lock1.m: $pc=0x38(~1): 0x00000000: nop
+test_lock1.m: $pc=0x3C(~1): 0x00000000: nop
+test_lock1.m: $pc=0x40(~1): 0x0C000050: jal 0x50[0x140]: $ra=0x0 -> $ra=0x48,$pc=0x140
+test_lock1.m: $pc=0x140(~12): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x144(~12): 0xAFBF0000: sw $ra,0($sp): $ra=72,$sp=0x1FFFDC -> memory[0x1FFFDC]=72=$ra
+test_lock1.m: $pc=0x148(~12): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097116,$sp=2097116 -> $sp=2097112
+test_lock1.m: $pc=0x14C(~12): 0xAFBE0000: sw $fp,0($sp): $fp=0,$sp=0x1FFFD8 -> memory[0x1FFFD8]=0=$fp
+test_lock1.m: $pc=0x150(~12): 0x27BE0000: addiu $fp,$sp,0: $fp=0,$sp=2097112 -> $fp=2097112
+test_lock1.m: $pc=0x154(~12): 0x0C000044: jal 0x44[0x110]: $ra=0x48 -> $ra=0x15C,$pc=0x110
+test_lock1.m: $pc=0x110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x114(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x118(~1): 0x03E00008: jr $ra: $ra=0x15C -> $pc=0x15C
+test_lock1.m: $pc=0x15C(~12): 0x24020000: addiu $v0,$zero,0: $v0=2,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x160(~13): 0x0C000044: jal 0x44[0x110]: $ra=0x15C -> $ra=0x168,$pc=0x110
+test_lock1.m: $pc=0x110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x114(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x118(~1): 0x03E00008: jr $ra: $ra=0x168 -> $pc=0x168
+test_lock1.m: $pc=0x168(~13): 0x24020000: addiu $v0,$zero,0: $v0=3,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x16C(~14): 0x0C000044: jal 0x44[0x110]: $ra=0x168 -> $ra=0x174,$pc=0x110
+test_lock1.m: $pc=0x110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x114(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x118(~1): 0x03E00008: jr $ra: $ra=0x174 -> $pc=0x174
+test_lock1.m: $pc=0x174(~14): 0x24020000: addiu $v0,$zero,0: $v0=4,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x178(~15): 0x0C000044: jal 0x44[0x110]: $ra=0x174 -> $ra=0x180,$pc=0x110
+test_lock1.m: $pc=0x110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x114(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x118(~1): 0x03E00008: jr $ra: $ra=0x180 -> $pc=0x180
+test_lock1.m: $pc=0x180(~15): 0x24020000: addiu $v0,$zero,0: $v0=5,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x184(~16): 0x0C000048: jal 0x48[0x120]: $ra=0x180 -> $ra=0x18C,$pc=0x120
+test_lock1.m: $pc=0x120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=0,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x124(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x128(~1): 0x03E00008: jr $ra: $ra=0x18C -> $pc=0x18C
+test_lock1.m: $pc=0x18C(~16): 0x24020000: addiu $v0,$zero,0: $v0=1,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x190(~17): 0x0C00003C: jal 0x3C[0xF0]: $ra=0x18C -> $ra=0x198,$pc=0xF0
+test_lock1.m: $pc=0xF0(~1): 0x24020FC9: addiu $v0,$zero,4041: $v0=0,$zero=0 -> $v0=4041
+test_lock1.m: $pc=0xF4(~1): 0x0000000C: syscall
+2
+test_lock1.m: $pc=0x200118(~1): 0x03E00008: jr $ra: $ra=0x20015C -> $pc=0x20015C
+test_lock1.m: $pc=0x20015C(~12): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200160(~13): 0x0C000044: jal 0x44[0x110]: $ra=0x20015C -> $ra=0x200168,$pc=0x200110
+test_lock1.m: $pc=0x200110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x200114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x200118(~1): 0x03E00008: jr $ra: $ra=0x200168 -> $pc=0x200168
+test_lock1.m: $pc=0x200168(~13): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x20016C(~14): 0x0C000044: jal 0x44[0x110]: $ra=0x200168 -> $ra=0x200174,$pc=0x200110
+test_lock1.m: $pc=0x200110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x200114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x200118(~1): 0x03E00008: jr $ra: $ra=0x200174 -> $pc=0x200174
+test_lock1.m: $pc=0x200174(~14): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200178(~15): 0x0C000044: jal 0x44[0x110]: $ra=0x200174 -> $ra=0x200180,$pc=0x200110
+test_lock1.m: $pc=0x200110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x200114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x200118(~1): 0x03E00008: jr $ra: $ra=0x200180 -> $pc=0x200180
+test_lock1.m: $pc=0x200180(~15): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200184(~16): 0x0C000048: jal 0x48[0x120]: $ra=0x200180 -> $ra=0x20018C,$pc=0x200120
+test_lock1.m: $pc=0x200120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=0,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x200124(~1): 0x0000000C: syscall
+3
+test_lock1.m: $pc=0x400118(~1): 0x03E00008: jr $ra: $ra=0x400168 -> $pc=0x400168
+test_lock1.m: $pc=0x400168(~13): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x40016C(~14): 0x0C000044: jal 0x44[0x110]: $ra=0x400168 -> $ra=0x400174,$pc=0x400110
+test_lock1.m: $pc=0x400110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x400114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x400118(~1): 0x03E00008: jr $ra: $ra=0x400174 -> $pc=0x400174
+test_lock1.m: $pc=0x400174(~14): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x400178(~15): 0x0C000044: jal 0x44[0x110]: $ra=0x400174 -> $ra=0x400180,$pc=0x400110
+test_lock1.m: $pc=0x400110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x400114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x400118(~1): 0x03E00008: jr $ra: $ra=0x400180 -> $pc=0x400180
+test_lock1.m: $pc=0x400180(~15): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x400184(~16): 0x0C000048: jal 0x48[0x120]: $ra=0x400180 -> $ra=0x40018C,$pc=0x400120
+test_lock1.m: $pc=0x400120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=0,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x400124(~1): 0x0000000C: syscall
+4
+test_lock1.m: $pc=0x600118(~1): 0x03E00008: jr $ra: $ra=0x600174 -> $pc=0x600174
+test_lock1.m: $pc=0x600174(~14): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x600178(~15): 0x0C000044: jal 0x44[0x110]: $ra=0x600174 -> $ra=0x600180,$pc=0x600110
+test_lock1.m: $pc=0x600110(~1): 0x24020FCB: addiu $v0,$zero,4043: $v0=0,$zero=0 -> $v0=4043
+test_lock1.m: $pc=0x600114(~1): 0x0000000C: syscall
+No free memory!
+test_lock1.m: $pc=0x600118(~1): 0x03E00008: jr $ra: $ra=0x600180 -> $pc=0x600180
+test_lock1.m: $pc=0x600180(~15): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x600184(~16): 0x0C000048: jal 0x48[0x120]: $ra=0x600180 -> $ra=0x60018C,$pc=0x600120
+test_lock1.m: $pc=0x600120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=0,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x600124(~1): 0x0000000C: syscall
+5
+test_lock1.m: $pc=0x800118(~1): 0x03E00008: jr $ra: $ra=0x800180 -> $pc=0x800180
+test_lock1.m: $pc=0x800180(~15): 0x24020000: addiu $v0,$zero,0: $v0=0,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x800184(~16): 0x0C000048: jal 0x48[0x120]: $ra=0x800180 -> $ra=0x80018C,$pc=0x800120
+test_lock1.m: $pc=0x800120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=0,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x800124(~1): 0x0000000C: syscall
+1
+test_lock1.m: $pc=0xF8(~1): 0x03E00008: jr $ra: $ra=0x198 -> $pc=0x198
+test_lock1.m: $pc=0x198(~17): 0x24020000: addiu $v0,$zero,0: $v0=4041,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x19C(~18): 0x2408000A: addiu $t0,$zero,10: $t0=636,$zero=0 -> $t0=10
+test_lock1.m: $pc=0x1A0(~18): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x1A4(~18): 0xAFA80000: sw $t0,0($sp): $t0=10,$sp=0x1FFFD4 -> memory[0x1FFFD4]=10=$t0
+test_lock1.m: $pc=0x1A8(~18): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x198 -> $ra=0x1B0,$pc=0x23C
+test_lock1.m: $pc=0x23C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=432,$sp=0x1FFFD0 -> memory[0x1FFFD0]=432=$ra
+test_lock1.m: $pc=0x244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x1FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x24C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x250(~27): 0x8FC80008: lw $t0,8($fp): $t0=10,$fp=0x1FFFCC -> $t0=10=memory[0x1FFFD4]
+test_lock1.m: $pc=0x254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=10 -> $v0=10
+test_lock1.m: $pc=0x258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x260
+test_lock1.m: $pc=0x260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x1FFFCC]
+test_lock1.m: $pc=0x268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x26C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=432,$sp=0x1FFFD0 -> $ra=432=memory[0x1FFFD0]
+test_lock1.m: $pc=0x270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x274(~29): 0x03E00008: jr $ra: $ra=0x1B0 -> $pc=0x1B0
+test_lock1.m: $pc=0x1B0(~18): 0x24020000: addiu $v0,$zero,0: $v0=10,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x1B4(~19): 0x24080006: addiu $t0,$zero,6: $t0=10,$zero=0 -> $t0=6
+test_lock1.m: $pc=0x1B8(~19): 0x24094000: addiu $t1,$zero,16384: $t1=0,$zero=0 -> $t1=16384
+test_lock1.m: $pc=0x1BC(~19): 0x01090019: multu $t0,$t1: $t0=6,$t1=16384,$lo=0 -> $lo=98304
+test_lock1.m: $pc=0x1C0(~19): 0x00004012: mflo $t0: $t0=6,$lo=98304 -> $t0=98304
+test_lock1.m: $pc=0x1C4(~19): 0x00000000: nop
+test_lock1.m: $pc=0x1C8(~19): 0x00000000: nop
+test_lock1.m: $pc=0x1CC(~19): 0x2508069F: addiu $t0,$t0,1695: $t0=98304,$t0=98304 -> $t0=99999
+test_lock1.m: $pc=0x1D0(~19): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x1D4(~19): 0xAFA80000: sw $t0,0($sp): $t0=99999,$sp=0x1FFFD4 -> memory[0x1FFFD4]=99999=$t0
+test_lock1.m: $pc=0x1D8(~19): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x1B0 -> $ra=0x1E0,$pc=0x23C
+test_lock1.m: $pc=0x23C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=480,$sp=0x1FFFD0 -> memory[0x1FFFD0]=480=$ra
+test_lock1.m: $pc=0x244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x1FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x24C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x250(~27): 0x8FC80008: lw $t0,8($fp): $t0=99999,$fp=0x1FFFCC -> $t0=99999=memory[0x1FFFD4]
+test_lock1.m: $pc=0x254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=99999 -> $v0=99999
+test_lock1.m: $pc=0x258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x260
+test_lock1.m: $pc=0x260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x1FFFCC]
+test_lock1.m: $pc=0x268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x26C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=480,$sp=0x1FFFD0 -> $ra=480=memory[0x1FFFD0]
+test_lock1.m: $pc=0x270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x274(~29): 0x03E00008: jr $ra: $ra=0x1E0 -> $pc=0x1E0
+test_lock1.m: $pc=0x1E0(~19): 0x24020000: addiu $v0,$zero,0: $v0=99999,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x1E4(~20): 0x240830A8: addiu $t0,$zero,12456: $t0=99999,$zero=0 -> $t0=12456
+test_lock1.m: $pc=0x1E8(~20): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x1EC(~20): 0xAFA80000: sw $t0,0($sp): $t0=12456,$sp=0x1FFFD4 -> memory[0x1FFFD4]=12456=$t0
+1
+test_lock1.m: $pc=0x1F0(~20): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x1E0 -> $ra=0x1F8,$pc=0x23C
+test_lock1.m: $pc=0x23C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=504,$sp=0x1FFFD0 -> memory[0x1FFFD0]=504=$ra
+test_lock1.m: $pc=0x244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x1FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x24C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x250(~27): 0x8FC80008: lw $t0,8($fp): $t0=12456,$fp=0x1FFFCC -> $t0=12456=memory[0x1FFFD4]
+test_lock1.m: $pc=0x254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=12456 -> $v0=12456
+test_lock1.m: $pc=0x258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x260
+test_lock1.m: $pc=0x260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x1FFFCC]
+test_lock1.m: $pc=0x268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x26C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=504,$sp=0x1FFFD0 -> $ra=504=memory[0x1FFFD0]
+test_lock1.m: $pc=0x270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x274(~29): 0x03E00008: jr $ra: $ra=0x1F8 -> $pc=0x1F8
+test_lock1.m: $pc=0x1F8(~20): 0x24020000: addiu $v0,$zero,0: $v0=12456,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x1FC(~21): 0x24080240: addiu $t0,$zero,576: $t0=12456,$zero=0 -> $t0=576
+test_lock1.m: $pc=0x200(~21): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x204(~21): 0xAFA80000: sw $t0,0($sp): $t0=576,$sp=0x1FFFD4 -> memory[0x1FFFD4]=576=$t0
+test_lock1.m: $pc=0x208(~21): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x1F8 -> $ra=0x210,$pc=0x23C
+test_lock1.m: $pc=0x23C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=528,$sp=0x1FFFD0 -> memory[0x1FFFD0]=528=$ra
+test_lock1.m: $pc=0x244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x1FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x24C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x250(~27): 0x8FC80008: lw $t0,8($fp): $t0=576,$fp=0x1FFFCC -> $t0=576=memory[0x1FFFD4]
+test_lock1.m: $pc=0x254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=576 -> $v0=576
+test_lock1.m: $pc=0x258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x260
+test_lock1.m: $pc=0x260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x1FFFCC]
+test_lock1.m: $pc=0x268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x26C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=528,$sp=0x1FFFD0 -> $ra=528=memory[0x1FFFD0]
+test_lock1.m: $pc=0x270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x274(~29): 0x03E00008: jr $ra: $ra=0x210 -> $pc=0x210
+test_lock1.m: $pc=0x210(~21): 0x24020000: addiu $v0,$zero,0: $v0=576,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x214(~22): 0x0C00004C: jal 0x4C[0x130]: $ra=0x210 -> $ra=0x21C,$pc=0x130
+test_lock1.m: $pc=0x130(~1): 0x24020FCF: addiu $v0,$zero,4047: $v0=0,$zero=0 -> $v0=4047
+test_lock1.m: $pc=0x134(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x138(~1): 0x03E00008: jr $ra: $ra=0x21C -> $pc=0x21C
+test_lock1.m: $pc=0x21C(~22): 0x24020000: addiu $v0,$zero,0: $v0=4047,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x220(~26): 0x27DD0000: addiu $sp,$fp,0: $sp=2097112,$fp=2097112 -> $sp=2097112
+test_lock1.m: $pc=0x224(~26): 0x8FBE0000: lw $fp,0($sp): $fp=2097112,$sp=0x1FFFD8 -> $fp=0=memory[0x1FFFD8]
+test_lock1.m: $pc=0x228(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097112,$sp=2097112 -> $sp=2097116
+test_lock1.m: $pc=0x22C(~26): 0x8FBF0000: lw $ra,0($sp): $ra=540,$sp=0x1FFFDC -> $ra=72=memory[0x1FFFDC]
+test_lock1.m: $pc=0x230(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+test_lock1.m: $pc=0x234(~26): 0x03E00008: jr $ra: $ra=0x48 -> $pc=0x48
+test_lock1.m: $pc=0x48(~1): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x4C(~1): 0xAFA20000: sw $v0,0($sp): $v0=0,$sp=0x1FFFDC -> memory[0x1FFFDC]=0=$v0
+test_lock1.m: $pc=0x50(~1): 0x8FA40000: lw $a0,0($sp): $a0=0,$sp=0x1FFFDC -> $a0=0=memory[0x1FFFDC]
+test_lock1.m: $pc=0x54(~1): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+2
+test_lock1.m: $pc=0x200120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x200124(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x200128(~1): 0x03E00008: jr $ra: $ra=0x20018C -> $pc=0x20018C
+test_lock1.m: $pc=0x20018C(~16): 0x24020000: addiu $v0,$zero,0: $v0=1,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200190(~17): 0x0C00003C: jal 0x3C[0xF0]: $ra=0x20018C -> $ra=0x200198,$pc=0x2000F0
+test_lock1.m: $pc=0x2000F0(~1): 0x24020FC9: addiu $v0,$zero,4041: $v0=0,$zero=0 -> $v0=4041
+test_lock1.m: $pc=0x2000F4(~1): 0x0000000C: syscall
+3
+test_lock1.m: $pc=0x400120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x400124(~1): 0x0000000C: syscall
+4
+test_lock1.m: $pc=0x600120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x600124(~1): 0x0000000C: syscall
+5
+test_lock1.m: $pc=0x800120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x800124(~1): 0x0000000C: syscall
+1
+test_lock1.m: $pc=0x58(~1): 0x24020FA1: addiu $v0,$zero,4001: $v0=0,$zero=0 -> $v0=4001
+test_lock1.m: $pc=0x5C(~1): 0x0000000C: syscall
+2
+test_lock1.m: $pc=0x2000F8(~1): 0x03E00008: jr $ra: $ra=0x200198 -> $pc=0x200198
+test_lock1.m: $pc=0x200198(~17): 0x24020000: addiu $v0,$zero,0: $v0=4041,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x20019C(~18): 0x2408000A: addiu $t0,$zero,10: $t0=636,$zero=0 -> $t0=10
+test_lock1.m: $pc=0x2001A0(~18): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x2001A4(~18): 0xAFA80000: sw $t0,0($sp): $t0=10,$sp=0x1FFFD4 -> memory[0x3FFFD4]=10=$t0
+test_lock1.m: $pc=0x2001A8(~18): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x200198 -> $ra=0x2001B0,$pc=0x20023C
+test_lock1.m: $pc=0x20023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x200240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=2097584,$sp=0x1FFFD0 -> memory[0x3FFFD0]=2097584=$ra
+test_lock1.m: $pc=0x200244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x200248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x3FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x20024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x200250(~27): 0x8FC80008: lw $t0,8($fp): $t0=10,$fp=0x1FFFCC -> $t0=10=memory[0x3FFFD4]
+test_lock1.m: $pc=0x200254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=10 -> $v0=10
+test_lock1.m: $pc=0x200258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x200260
+test_lock1.m: $pc=0x200260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x200264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x3FFFCC]
+test_lock1.m: $pc=0x200268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x20026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=2097584,$sp=0x1FFFD0 -> $ra=2097584=memory[0x3FFFD0]
+test_lock1.m: $pc=0x200270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x200274(~29): 0x03E00008: jr $ra: $ra=0x2001B0 -> $pc=0x2001B0
+test_lock1.m: $pc=0x2001B0(~18): 0x24020000: addiu $v0,$zero,0: $v0=10,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x2001B4(~19): 0x24080006: addiu $t0,$zero,6: $t0=10,$zero=0 -> $t0=6
+test_lock1.m: $pc=0x2001B8(~19): 0x24094000: addiu $t1,$zero,16384: $t1=0,$zero=0 -> $t1=16384
+test_lock1.m: $pc=0x2001BC(~19): 0x01090019: multu $t0,$t1: $t0=6,$t1=16384,$lo=0 -> $lo=98304
+test_lock1.m: $pc=0x2001C0(~19): 0x00004012: mflo $t0: $t0=6,$lo=98304 -> $t0=98304
+test_lock1.m: $pc=0x2001C4(~19): 0x00000000: nop
+test_lock1.m: $pc=0x2001C8(~19): 0x00000000: nop
+test_lock1.m: $pc=0x2001CC(~19): 0x2508069F: addiu $t0,$t0,1695: $t0=98304,$t0=98304 -> $t0=99999
+test_lock1.m: $pc=0x2001D0(~19): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x2001D4(~19): 0xAFA80000: sw $t0,0($sp): $t0=99999,$sp=0x1FFFD4 -> memory[0x3FFFD4]=99999=$t0
+test_lock1.m: $pc=0x2001D8(~19): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x2001B0 -> $ra=0x2001E0,$pc=0x20023C
+test_lock1.m: $pc=0x20023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x200240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=2097632,$sp=0x1FFFD0 -> memory[0x3FFFD0]=2097632=$ra
+test_lock1.m: $pc=0x200244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x200248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x3FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x20024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x200250(~27): 0x8FC80008: lw $t0,8($fp): $t0=99999,$fp=0x1FFFCC -> $t0=99999=memory[0x3FFFD4]
+test_lock1.m: $pc=0x200254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=99999 -> $v0=99999
+test_lock1.m: $pc=0x200258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x200260
+test_lock1.m: $pc=0x200260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x200264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x3FFFCC]
+test_lock1.m: $pc=0x200268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x20026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=2097632,$sp=0x1FFFD0 -> $ra=2097632=memory[0x3FFFD0]
+test_lock1.m: $pc=0x200270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x200274(~29): 0x03E00008: jr $ra: $ra=0x2001E0 -> $pc=0x2001E0
+test_lock1.m: $pc=0x2001E0(~19): 0x24020000: addiu $v0,$zero,0: $v0=99999,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x2001E4(~20): 0x240830A8: addiu $t0,$zero,12456: $t0=99999,$zero=0 -> $t0=12456
+test_lock1.m: $pc=0x2001E8(~20): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x2001EC(~20): 0xAFA80000: sw $t0,0($sp): $t0=12456,$sp=0x1FFFD4 -> memory[0x3FFFD4]=12456=$t0
+2
+test_lock1.m: $pc=0x2001F0(~20): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x2001E0 -> $ra=0x2001F8,$pc=0x20023C
+test_lock1.m: $pc=0x20023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x200240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=2097656,$sp=0x1FFFD0 -> memory[0x3FFFD0]=2097656=$ra
+test_lock1.m: $pc=0x200244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x200248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x3FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x20024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x200250(~27): 0x8FC80008: lw $t0,8($fp): $t0=12456,$fp=0x1FFFCC -> $t0=12456=memory[0x3FFFD4]
+test_lock1.m: $pc=0x200254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=12456 -> $v0=12456
+test_lock1.m: $pc=0x200258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x200260
+test_lock1.m: $pc=0x200260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x200264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x3FFFCC]
+test_lock1.m: $pc=0x200268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x20026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=2097656,$sp=0x1FFFD0 -> $ra=2097656=memory[0x3FFFD0]
+test_lock1.m: $pc=0x200270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x200274(~29): 0x03E00008: jr $ra: $ra=0x2001F8 -> $pc=0x2001F8
+test_lock1.m: $pc=0x2001F8(~20): 0x24020000: addiu $v0,$zero,0: $v0=12456,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x2001FC(~21): 0x24080240: addiu $t0,$zero,576: $t0=12456,$zero=0 -> $t0=576
+test_lock1.m: $pc=0x200200(~21): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x200204(~21): 0xAFA80000: sw $t0,0($sp): $t0=576,$sp=0x1FFFD4 -> memory[0x3FFFD4]=576=$t0
+test_lock1.m: $pc=0x200208(~21): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x2001F8 -> $ra=0x200210,$pc=0x20023C
+test_lock1.m: $pc=0x20023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x200240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=2097680,$sp=0x1FFFD0 -> memory[0x3FFFD0]=2097680=$ra
+test_lock1.m: $pc=0x200244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x200248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x3FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x20024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x200250(~27): 0x8FC80008: lw $t0,8($fp): $t0=576,$fp=0x1FFFCC -> $t0=576=memory[0x3FFFD4]
+test_lock1.m: $pc=0x200254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=576 -> $v0=576
+test_lock1.m: $pc=0x200258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x200260
+test_lock1.m: $pc=0x200260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x200264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x3FFFCC]
+test_lock1.m: $pc=0x200268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x20026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=2097680,$sp=0x1FFFD0 -> $ra=2097680=memory[0x3FFFD0]
+test_lock1.m: $pc=0x200270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x200274(~29): 0x03E00008: jr $ra: $ra=0x200210 -> $pc=0x200210
+test_lock1.m: $pc=0x200210(~21): 0x24020000: addiu $v0,$zero,0: $v0=576,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200214(~22): 0x0C00004C: jal 0x4C[0x130]: $ra=0x200210 -> $ra=0x20021C,$pc=0x200130
+test_lock1.m: $pc=0x200130(~1): 0x24020FCF: addiu $v0,$zero,4047: $v0=0,$zero=0 -> $v0=4047
+test_lock1.m: $pc=0x200134(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x200138(~1): 0x03E00008: jr $ra: $ra=0x20021C -> $pc=0x20021C
+test_lock1.m: $pc=0x20021C(~22): 0x24020000: addiu $v0,$zero,0: $v0=4047,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x200220(~26): 0x27DD0000: addiu $sp,$fp,0: $sp=2097112,$fp=2097112 -> $sp=2097112
+test_lock1.m: $pc=0x200224(~26): 0x8FBE0000: lw $fp,0($sp): $fp=2097112,$sp=0x1FFFD8 -> $fp=0=memory[0x3FFFD8]
+test_lock1.m: $pc=0x200228(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097112,$sp=2097112 -> $sp=2097116
+test_lock1.m: $pc=0x20022C(~26): 0x8FBF0000: lw $ra,0($sp): $ra=2097692,$sp=0x1FFFDC -> $ra=72=memory[0x3FFFDC]
+test_lock1.m: $pc=0x200230(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+test_lock1.m: $pc=0x200234(~26): 0x03E00008: jr $ra: $ra=0x48 -> $pc=0x48
+test_lock1.m: $pc=0x48(~0): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x4C(~0): 0xAFA20000: sw $v0,0($sp): $v0=0,$sp=0x1FFFDC -> memory[0x3FFFDC]=0=$v0
+test_lock1.m: $pc=0x50(~0): 0x8FA40000: lw $a0,0($sp): $a0=0,$sp=0x1FFFDC -> $a0=0=memory[0x3FFFDC]
+test_lock1.m: $pc=0x54(~0): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+3
+test_lock1.m: $pc=0x400120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x400124(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x400128(~1): 0x03E00008: jr $ra: $ra=0x40018C -> $pc=0x40018C
+test_lock1.m: $pc=0x40018C(~16): 0x24020000: addiu $v0,$zero,0: $v0=1,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x400190(~17): 0x0C00003C: jal 0x3C[0xF0]: $ra=0x40018C -> $ra=0x400198,$pc=0x4000F0
+test_lock1.m: $pc=0x4000F0(~1): 0x24020FC9: addiu $v0,$zero,4041: $v0=0,$zero=0 -> $v0=4041
+test_lock1.m: $pc=0x4000F4(~1): 0x0000000C: syscall
+4
+test_lock1.m: $pc=0x600120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x600124(~1): 0x0000000C: syscall
+5
+test_lock1.m: $pc=0x800120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x800124(~1): 0x0000000C: syscall
+2
+test_lock1.m: $pc=0x58(~0): 0x24020FA1: addiu $v0,$zero,4001: $v0=0,$zero=0 -> $v0=4001
+test_lock1.m: $pc=0x5C(~0): 0x0000000C: syscall
+3
+test_lock1.m: $pc=0x4000F8(~1): 0x03E00008: jr $ra: $ra=0x400198 -> $pc=0x400198
+test_lock1.m: $pc=0x400198(~17): 0x24020000: addiu $v0,$zero,0: $v0=4041,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x40019C(~18): 0x2408000A: addiu $t0,$zero,10: $t0=636,$zero=0 -> $t0=10
+test_lock1.m: $pc=0x4001A0(~18): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x4001A4(~18): 0xAFA80000: sw $t0,0($sp): $t0=10,$sp=0x1FFFD4 -> memory[0x5FFFD4]=10=$t0
+test_lock1.m: $pc=0x4001A8(~18): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x400198 -> $ra=0x4001B0,$pc=0x40023C
+test_lock1.m: $pc=0x40023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x400240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=4194736,$sp=0x1FFFD0 -> memory[0x5FFFD0]=4194736=$ra
+test_lock1.m: $pc=0x400244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x400248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x5FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x40024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x400250(~27): 0x8FC80008: lw $t0,8($fp): $t0=10,$fp=0x1FFFCC -> $t0=10=memory[0x5FFFD4]
+test_lock1.m: $pc=0x400254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=10 -> $v0=10
+test_lock1.m: $pc=0x400258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x400260
+test_lock1.m: $pc=0x400260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x400264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x5FFFCC]
+test_lock1.m: $pc=0x400268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x40026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=4194736,$sp=0x1FFFD0 -> $ra=4194736=memory[0x5FFFD0]
+test_lock1.m: $pc=0x400270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x400274(~29): 0x03E00008: jr $ra: $ra=0x4001B0 -> $pc=0x4001B0
+test_lock1.m: $pc=0x4001B0(~18): 0x24020000: addiu $v0,$zero,0: $v0=10,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x4001B4(~19): 0x24080006: addiu $t0,$zero,6: $t0=10,$zero=0 -> $t0=6
+test_lock1.m: $pc=0x4001B8(~19): 0x24094000: addiu $t1,$zero,16384: $t1=0,$zero=0 -> $t1=16384
+test_lock1.m: $pc=0x4001BC(~19): 0x01090019: multu $t0,$t1: $t0=6,$t1=16384,$lo=0 -> $lo=98304
+test_lock1.m: $pc=0x4001C0(~19): 0x00004012: mflo $t0: $t0=6,$lo=98304 -> $t0=98304
+test_lock1.m: $pc=0x4001C4(~19): 0x00000000: nop
+test_lock1.m: $pc=0x4001C8(~19): 0x00000000: nop
+test_lock1.m: $pc=0x4001CC(~19): 0x2508069F: addiu $t0,$t0,1695: $t0=98304,$t0=98304 -> $t0=99999
+test_lock1.m: $pc=0x4001D0(~19): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x4001D4(~19): 0xAFA80000: sw $t0,0($sp): $t0=99999,$sp=0x1FFFD4 -> memory[0x5FFFD4]=99999=$t0
+test_lock1.m: $pc=0x4001D8(~19): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x4001B0 -> $ra=0x4001E0,$pc=0x40023C
+test_lock1.m: $pc=0x40023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x400240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=4194784,$sp=0x1FFFD0 -> memory[0x5FFFD0]=4194784=$ra
+test_lock1.m: $pc=0x400244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x400248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x5FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x40024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x400250(~27): 0x8FC80008: lw $t0,8($fp): $t0=99999,$fp=0x1FFFCC -> $t0=99999=memory[0x5FFFD4]
+test_lock1.m: $pc=0x400254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=99999 -> $v0=99999
+test_lock1.m: $pc=0x400258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x400260
+test_lock1.m: $pc=0x400260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x400264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x5FFFCC]
+test_lock1.m: $pc=0x400268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x40026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=4194784,$sp=0x1FFFD0 -> $ra=4194784=memory[0x5FFFD0]
+test_lock1.m: $pc=0x400270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x400274(~29): 0x03E00008: jr $ra: $ra=0x4001E0 -> $pc=0x4001E0
+test_lock1.m: $pc=0x4001E0(~19): 0x24020000: addiu $v0,$zero,0: $v0=99999,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x4001E4(~20): 0x240830A8: addiu $t0,$zero,12456: $t0=99999,$zero=0 -> $t0=12456
+test_lock1.m: $pc=0x4001E8(~20): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x4001EC(~20): 0xAFA80000: sw $t0,0($sp): $t0=12456,$sp=0x1FFFD4 -> memory[0x5FFFD4]=12456=$t0
+3
+test_lock1.m: $pc=0x4001F0(~20): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x4001E0 -> $ra=0x4001F8,$pc=0x40023C
+test_lock1.m: $pc=0x40023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x400240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=4194808,$sp=0x1FFFD0 -> memory[0x5FFFD0]=4194808=$ra
+test_lock1.m: $pc=0x400244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x400248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x5FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x40024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x400250(~27): 0x8FC80008: lw $t0,8($fp): $t0=12456,$fp=0x1FFFCC -> $t0=12456=memory[0x5FFFD4]
+test_lock1.m: $pc=0x400254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=12456 -> $v0=12456
+test_lock1.m: $pc=0x400258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x400260
+test_lock1.m: $pc=0x400260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x400264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x5FFFCC]
+test_lock1.m: $pc=0x400268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x40026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=4194808,$sp=0x1FFFD0 -> $ra=4194808=memory[0x5FFFD0]
+test_lock1.m: $pc=0x400270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x400274(~29): 0x03E00008: jr $ra: $ra=0x4001F8 -> $pc=0x4001F8
+test_lock1.m: $pc=0x4001F8(~20): 0x24020000: addiu $v0,$zero,0: $v0=12456,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x4001FC(~21): 0x24080240: addiu $t0,$zero,576: $t0=12456,$zero=0 -> $t0=576
+test_lock1.m: $pc=0x400200(~21): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x400204(~21): 0xAFA80000: sw $t0,0($sp): $t0=576,$sp=0x1FFFD4 -> memory[0x5FFFD4]=576=$t0
+test_lock1.m: $pc=0x400208(~21): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x4001F8 -> $ra=0x400210,$pc=0x40023C
+test_lock1.m: $pc=0x40023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x400240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=4194832,$sp=0x1FFFD0 -> memory[0x5FFFD0]=4194832=$ra
+test_lock1.m: $pc=0x400244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x400248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x5FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x40024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x400250(~27): 0x8FC80008: lw $t0,8($fp): $t0=576,$fp=0x1FFFCC -> $t0=576=memory[0x5FFFD4]
+test_lock1.m: $pc=0x400254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=576 -> $v0=576
+test_lock1.m: $pc=0x400258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x400260
+test_lock1.m: $pc=0x400260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x400264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x5FFFCC]
+test_lock1.m: $pc=0x400268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x40026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=4194832,$sp=0x1FFFD0 -> $ra=4194832=memory[0x5FFFD0]
+test_lock1.m: $pc=0x400270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x400274(~29): 0x03E00008: jr $ra: $ra=0x400210 -> $pc=0x400210
+test_lock1.m: $pc=0x400210(~21): 0x24020000: addiu $v0,$zero,0: $v0=576,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x400214(~22): 0x0C00004C: jal 0x4C[0x130]: $ra=0x400210 -> $ra=0x40021C,$pc=0x400130
+test_lock1.m: $pc=0x400130(~1): 0x24020FCF: addiu $v0,$zero,4047: $v0=0,$zero=0 -> $v0=4047
+test_lock1.m: $pc=0x400134(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x400138(~1): 0x03E00008: jr $ra: $ra=0x40021C -> $pc=0x40021C
+test_lock1.m: $pc=0x40021C(~22): 0x24020000: addiu $v0,$zero,0: $v0=4047,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x400220(~26): 0x27DD0000: addiu $sp,$fp,0: $sp=2097112,$fp=2097112 -> $sp=2097112
+test_lock1.m: $pc=0x400224(~26): 0x8FBE0000: lw $fp,0($sp): $fp=2097112,$sp=0x1FFFD8 -> $fp=0=memory[0x5FFFD8]
+test_lock1.m: $pc=0x400228(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097112,$sp=2097112 -> $sp=2097116
+test_lock1.m: $pc=0x40022C(~26): 0x8FBF0000: lw $ra,0($sp): $ra=4194844,$sp=0x1FFFDC -> $ra=72=memory[0x5FFFDC]
+test_lock1.m: $pc=0x400230(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+test_lock1.m: $pc=0x400234(~26): 0x03E00008: jr $ra: $ra=0x48 -> $pc=0x48
+test_lock1.m: $pc=0x48(~0): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x4C(~0): 0xAFA20000: sw $v0,0($sp): $v0=0,$sp=0x1FFFDC -> memory[0x5FFFDC]=0=$v0
+test_lock1.m: $pc=0x50(~0): 0x8FA40000: lw $a0,0($sp): $a0=0,$sp=0x1FFFDC -> $a0=0=memory[0x5FFFDC]
+test_lock1.m: $pc=0x54(~0): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+4
+test_lock1.m: $pc=0x600120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x600124(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x600128(~1): 0x03E00008: jr $ra: $ra=0x60018C -> $pc=0x60018C
+test_lock1.m: $pc=0x60018C(~16): 0x24020000: addiu $v0,$zero,0: $v0=1,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x600190(~17): 0x0C00003C: jal 0x3C[0xF0]: $ra=0x60018C -> $ra=0x600198,$pc=0x6000F0
+test_lock1.m: $pc=0x6000F0(~1): 0x24020FC9: addiu $v0,$zero,4041: $v0=0,$zero=0 -> $v0=4041
+test_lock1.m: $pc=0x6000F4(~1): 0x0000000C: syscall
+5
+test_lock1.m: $pc=0x800120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x800124(~1): 0x0000000C: syscall
+3
+test_lock1.m: $pc=0x58(~0): 0x24020FA1: addiu $v0,$zero,4001: $v0=0,$zero=0 -> $v0=4001
+test_lock1.m: $pc=0x5C(~0): 0x0000000C: syscall
+4
+test_lock1.m: $pc=0x6000F8(~1): 0x03E00008: jr $ra: $ra=0x600198 -> $pc=0x600198
+test_lock1.m: $pc=0x600198(~17): 0x24020000: addiu $v0,$zero,0: $v0=4041,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x60019C(~18): 0x2408000A: addiu $t0,$zero,10: $t0=636,$zero=0 -> $t0=10
+test_lock1.m: $pc=0x6001A0(~18): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x6001A4(~18): 0xAFA80000: sw $t0,0($sp): $t0=10,$sp=0x1FFFD4 -> memory[0x7FFFD4]=10=$t0
+test_lock1.m: $pc=0x6001A8(~18): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x600198 -> $ra=0x6001B0,$pc=0x60023C
+test_lock1.m: $pc=0x60023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x600240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=6291888,$sp=0x1FFFD0 -> memory[0x7FFFD0]=6291888=$ra
+test_lock1.m: $pc=0x600244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x600248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x7FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x60024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x600250(~27): 0x8FC80008: lw $t0,8($fp): $t0=10,$fp=0x1FFFCC -> $t0=10=memory[0x7FFFD4]
+test_lock1.m: $pc=0x600254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=10 -> $v0=10
+test_lock1.m: $pc=0x600258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x600260
+test_lock1.m: $pc=0x600260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x600264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x7FFFCC]
+test_lock1.m: $pc=0x600268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x60026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=6291888,$sp=0x1FFFD0 -> $ra=6291888=memory[0x7FFFD0]
+test_lock1.m: $pc=0x600270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x600274(~29): 0x03E00008: jr $ra: $ra=0x6001B0 -> $pc=0x6001B0
+test_lock1.m: $pc=0x6001B0(~18): 0x24020000: addiu $v0,$zero,0: $v0=10,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x6001B4(~19): 0x24080006: addiu $t0,$zero,6: $t0=10,$zero=0 -> $t0=6
+test_lock1.m: $pc=0x6001B8(~19): 0x24094000: addiu $t1,$zero,16384: $t1=0,$zero=0 -> $t1=16384
+test_lock1.m: $pc=0x6001BC(~19): 0x01090019: multu $t0,$t1: $t0=6,$t1=16384,$lo=0 -> $lo=98304
+test_lock1.m: $pc=0x6001C0(~19): 0x00004012: mflo $t0: $t0=6,$lo=98304 -> $t0=98304
+test_lock1.m: $pc=0x6001C4(~19): 0x00000000: nop
+test_lock1.m: $pc=0x6001C8(~19): 0x00000000: nop
+test_lock1.m: $pc=0x6001CC(~19): 0x2508069F: addiu $t0,$t0,1695: $t0=98304,$t0=98304 -> $t0=99999
+test_lock1.m: $pc=0x6001D0(~19): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x6001D4(~19): 0xAFA80000: sw $t0,0($sp): $t0=99999,$sp=0x1FFFD4 -> memory[0x7FFFD4]=99999=$t0
+test_lock1.m: $pc=0x6001D8(~19): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x6001B0 -> $ra=0x6001E0,$pc=0x60023C
+test_lock1.m: $pc=0x60023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x600240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=6291936,$sp=0x1FFFD0 -> memory[0x7FFFD0]=6291936=$ra
+test_lock1.m: $pc=0x600244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x600248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x7FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x60024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x600250(~27): 0x8FC80008: lw $t0,8($fp): $t0=99999,$fp=0x1FFFCC -> $t0=99999=memory[0x7FFFD4]
+test_lock1.m: $pc=0x600254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=99999 -> $v0=99999
+test_lock1.m: $pc=0x600258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x600260
+test_lock1.m: $pc=0x600260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x600264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x7FFFCC]
+test_lock1.m: $pc=0x600268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x60026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=6291936,$sp=0x1FFFD0 -> $ra=6291936=memory[0x7FFFD0]
+test_lock1.m: $pc=0x600270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x600274(~29): 0x03E00008: jr $ra: $ra=0x6001E0 -> $pc=0x6001E0
+test_lock1.m: $pc=0x6001E0(~19): 0x24020000: addiu $v0,$zero,0: $v0=99999,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x6001E4(~20): 0x240830A8: addiu $t0,$zero,12456: $t0=99999,$zero=0 -> $t0=12456
+test_lock1.m: $pc=0x6001E8(~20): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x6001EC(~20): 0xAFA80000: sw $t0,0($sp): $t0=12456,$sp=0x1FFFD4 -> memory[0x7FFFD4]=12456=$t0
+4
+test_lock1.m: $pc=0x6001F0(~20): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x6001E0 -> $ra=0x6001F8,$pc=0x60023C
+test_lock1.m: $pc=0x60023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x600240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=6291960,$sp=0x1FFFD0 -> memory[0x7FFFD0]=6291960=$ra
+test_lock1.m: $pc=0x600244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x600248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x7FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x60024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x600250(~27): 0x8FC80008: lw $t0,8($fp): $t0=12456,$fp=0x1FFFCC -> $t0=12456=memory[0x7FFFD4]
+test_lock1.m: $pc=0x600254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=12456 -> $v0=12456
+test_lock1.m: $pc=0x600258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x600260
+test_lock1.m: $pc=0x600260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x600264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x7FFFCC]
+test_lock1.m: $pc=0x600268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x60026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=6291960,$sp=0x1FFFD0 -> $ra=6291960=memory[0x7FFFD0]
+test_lock1.m: $pc=0x600270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x600274(~29): 0x03E00008: jr $ra: $ra=0x6001F8 -> $pc=0x6001F8
+test_lock1.m: $pc=0x6001F8(~20): 0x24020000: addiu $v0,$zero,0: $v0=12456,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x6001FC(~21): 0x24080240: addiu $t0,$zero,576: $t0=12456,$zero=0 -> $t0=576
+test_lock1.m: $pc=0x600200(~21): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x600204(~21): 0xAFA80000: sw $t0,0($sp): $t0=576,$sp=0x1FFFD4 -> memory[0x7FFFD4]=576=$t0
+test_lock1.m: $pc=0x600208(~21): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x6001F8 -> $ra=0x600210,$pc=0x60023C
+test_lock1.m: $pc=0x60023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x600240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=6291984,$sp=0x1FFFD0 -> memory[0x7FFFD0]=6291984=$ra
+test_lock1.m: $pc=0x600244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x600248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x7FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x60024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x600250(~27): 0x8FC80008: lw $t0,8($fp): $t0=576,$fp=0x1FFFCC -> $t0=576=memory[0x7FFFD4]
+test_lock1.m: $pc=0x600254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=576 -> $v0=576
+test_lock1.m: $pc=0x600258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x600260
+test_lock1.m: $pc=0x600260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x600264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x7FFFCC]
+test_lock1.m: $pc=0x600268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x60026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=6291984,$sp=0x1FFFD0 -> $ra=6291984=memory[0x7FFFD0]
+test_lock1.m: $pc=0x600270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x600274(~29): 0x03E00008: jr $ra: $ra=0x600210 -> $pc=0x600210
+test_lock1.m: $pc=0x600210(~21): 0x24020000: addiu $v0,$zero,0: $v0=576,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x600214(~22): 0x0C00004C: jal 0x4C[0x130]: $ra=0x600210 -> $ra=0x60021C,$pc=0x600130
+test_lock1.m: $pc=0x600130(~1): 0x24020FCF: addiu $v0,$zero,4047: $v0=0,$zero=0 -> $v0=4047
+test_lock1.m: $pc=0x600134(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x600138(~1): 0x03E00008: jr $ra: $ra=0x60021C -> $pc=0x60021C
+test_lock1.m: $pc=0x60021C(~22): 0x24020000: addiu $v0,$zero,0: $v0=4047,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x600220(~26): 0x27DD0000: addiu $sp,$fp,0: $sp=2097112,$fp=2097112 -> $sp=2097112
+test_lock1.m: $pc=0x600224(~26): 0x8FBE0000: lw $fp,0($sp): $fp=2097112,$sp=0x1FFFD8 -> $fp=0=memory[0x7FFFD8]
+test_lock1.m: $pc=0x600228(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097112,$sp=2097112 -> $sp=2097116
+test_lock1.m: $pc=0x60022C(~26): 0x8FBF0000: lw $ra,0($sp): $ra=6291996,$sp=0x1FFFDC -> $ra=72=memory[0x7FFFDC]
+test_lock1.m: $pc=0x600230(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+test_lock1.m: $pc=0x600234(~26): 0x03E00008: jr $ra: $ra=0x48 -> $pc=0x48
+test_lock1.m: $pc=0x48(~0): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x4C(~0): 0xAFA20000: sw $v0,0($sp): $v0=0,$sp=0x1FFFDC -> memory[0x7FFFDC]=0=$v0
+test_lock1.m: $pc=0x50(~0): 0x8FA40000: lw $a0,0($sp): $a0=0,$sp=0x1FFFDC -> $a0=0=memory[0x7FFFDC]
+test_lock1.m: $pc=0x54(~0): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+5
+test_lock1.m: $pc=0x800120(~1): 0x24020FCE: addiu $v0,$zero,4046: $v0=4046,$zero=0 -> $v0=4046
+test_lock1.m: $pc=0x800124(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x800128(~1): 0x03E00008: jr $ra: $ra=0x80018C -> $pc=0x80018C
+test_lock1.m: $pc=0x80018C(~16): 0x24020000: addiu $v0,$zero,0: $v0=1,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x800190(~17): 0x0C00003C: jal 0x3C[0xF0]: $ra=0x80018C -> $ra=0x800198,$pc=0x8000F0
+test_lock1.m: $pc=0x8000F0(~1): 0x24020FC9: addiu $v0,$zero,4041: $v0=0,$zero=0 -> $v0=4041
+test_lock1.m: $pc=0x8000F4(~1): 0x0000000C: syscall
+4
+test_lock1.m: $pc=0x58(~0): 0x24020FA1: addiu $v0,$zero,4001: $v0=0,$zero=0 -> $v0=4001
+test_lock1.m: $pc=0x5C(~0): 0x0000000C: syscall
+5
+test_lock1.m: $pc=0x8000F8(~1): 0x03E00008: jr $ra: $ra=0x800198 -> $pc=0x800198
+test_lock1.m: $pc=0x800198(~17): 0x24020000: addiu $v0,$zero,0: $v0=4041,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x80019C(~18): 0x2408000A: addiu $t0,$zero,10: $t0=636,$zero=0 -> $t0=10
+test_lock1.m: $pc=0x8001A0(~18): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x8001A4(~18): 0xAFA80000: sw $t0,0($sp): $t0=10,$sp=0x1FFFD4 -> memory[0x9FFFD4]=10=$t0
+test_lock1.m: $pc=0x8001A8(~18): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x800198 -> $ra=0x8001B0,$pc=0x80023C
+test_lock1.m: $pc=0x80023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x800240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=8389040,$sp=0x1FFFD0 -> memory[0x9FFFD0]=8389040=$ra
+test_lock1.m: $pc=0x800244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x800248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x9FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x80024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x800250(~27): 0x8FC80008: lw $t0,8($fp): $t0=10,$fp=0x1FFFCC -> $t0=10=memory[0x9FFFD4]
+test_lock1.m: $pc=0x800254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=10 -> $v0=10
+test_lock1.m: $pc=0x800258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x800260
+test_lock1.m: $pc=0x800260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x800264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x9FFFCC]
+test_lock1.m: $pc=0x800268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x80026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=8389040,$sp=0x1FFFD0 -> $ra=8389040=memory[0x9FFFD0]
+test_lock1.m: $pc=0x800270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x800274(~29): 0x03E00008: jr $ra: $ra=0x8001B0 -> $pc=0x8001B0
+test_lock1.m: $pc=0x8001B0(~18): 0x24020000: addiu $v0,$zero,0: $v0=10,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x8001B4(~19): 0x24080006: addiu $t0,$zero,6: $t0=10,$zero=0 -> $t0=6
+test_lock1.m: $pc=0x8001B8(~19): 0x24094000: addiu $t1,$zero,16384: $t1=0,$zero=0 -> $t1=16384
+test_lock1.m: $pc=0x8001BC(~19): 0x01090019: multu $t0,$t1: $t0=6,$t1=16384,$lo=0 -> $lo=98304
+test_lock1.m: $pc=0x8001C0(~19): 0x00004012: mflo $t0: $t0=6,$lo=98304 -> $t0=98304
+test_lock1.m: $pc=0x8001C4(~19): 0x00000000: nop
+test_lock1.m: $pc=0x8001C8(~19): 0x00000000: nop
+test_lock1.m: $pc=0x8001CC(~19): 0x2508069F: addiu $t0,$t0,1695: $t0=98304,$t0=98304 -> $t0=99999
+test_lock1.m: $pc=0x8001D0(~19): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x8001D4(~19): 0xAFA80000: sw $t0,0($sp): $t0=99999,$sp=0x1FFFD4 -> memory[0x9FFFD4]=99999=$t0
+test_lock1.m: $pc=0x8001D8(~19): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x8001B0 -> $ra=0x8001E0,$pc=0x80023C
+test_lock1.m: $pc=0x80023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x800240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=8389088,$sp=0x1FFFD0 -> memory[0x9FFFD0]=8389088=$ra
+test_lock1.m: $pc=0x800244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x800248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x9FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x80024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x800250(~27): 0x8FC80008: lw $t0,8($fp): $t0=99999,$fp=0x1FFFCC -> $t0=99999=memory[0x9FFFD4]
+test_lock1.m: $pc=0x800254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=99999 -> $v0=99999
+test_lock1.m: $pc=0x800258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x800260
+test_lock1.m: $pc=0x800260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x800264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x9FFFCC]
+test_lock1.m: $pc=0x800268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x80026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=8389088,$sp=0x1FFFD0 -> $ra=8389088=memory[0x9FFFD0]
+test_lock1.m: $pc=0x800270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x800274(~29): 0x03E00008: jr $ra: $ra=0x8001E0 -> $pc=0x8001E0
+test_lock1.m: $pc=0x8001E0(~19): 0x24020000: addiu $v0,$zero,0: $v0=99999,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x8001E4(~20): 0x240830A8: addiu $t0,$zero,12456: $t0=99999,$zero=0 -> $t0=12456
+test_lock1.m: $pc=0x8001E8(~20): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x8001EC(~20): 0xAFA80000: sw $t0,0($sp): $t0=12456,$sp=0x1FFFD4 -> memory[0x9FFFD4]=12456=$t0
+5
+test_lock1.m: $pc=0x8001F0(~20): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x8001E0 -> $ra=0x8001F8,$pc=0x80023C
+test_lock1.m: $pc=0x80023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x800240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=8389112,$sp=0x1FFFD0 -> memory[0x9FFFD0]=8389112=$ra
+test_lock1.m: $pc=0x800244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x800248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x9FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x80024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x800250(~27): 0x8FC80008: lw $t0,8($fp): $t0=12456,$fp=0x1FFFCC -> $t0=12456=memory[0x9FFFD4]
+test_lock1.m: $pc=0x800254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=12456 -> $v0=12456
+test_lock1.m: $pc=0x800258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x800260
+test_lock1.m: $pc=0x800260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x800264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x9FFFCC]
+test_lock1.m: $pc=0x800268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x80026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=8389112,$sp=0x1FFFD0 -> $ra=8389112=memory[0x9FFFD0]
+test_lock1.m: $pc=0x800270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x800274(~29): 0x03E00008: jr $ra: $ra=0x8001F8 -> $pc=0x8001F8
+test_lock1.m: $pc=0x8001F8(~20): 0x24020000: addiu $v0,$zero,0: $v0=12456,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x8001FC(~21): 0x24080240: addiu $t0,$zero,576: $t0=12456,$zero=0 -> $t0=576
+test_lock1.m: $pc=0x800200(~21): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097112,$sp=2097112 -> $sp=2097108
+test_lock1.m: $pc=0x800204(~21): 0xAFA80000: sw $t0,0($sp): $t0=576,$sp=0x1FFFD4 -> memory[0x9FFFD4]=576=$t0
+test_lock1.m: $pc=0x800208(~21): 0x0C00008F: jal 0x8F[0x23C]: $ra=0x8001F8 -> $ra=0x800210,$pc=0x80023C
+test_lock1.m: $pc=0x80023C(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097108,$sp=2097108 -> $sp=2097104
+test_lock1.m: $pc=0x800240(~27): 0xAFBF0000: sw $ra,0($sp): $ra=8389136,$sp=0x1FFFD0 -> memory[0x9FFFD0]=8389136=$ra
+test_lock1.m: $pc=0x800244(~27): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097104,$sp=2097104 -> $sp=2097100
+test_lock1.m: $pc=0x800248(~27): 0xAFBE0000: sw $fp,0($sp): $fp=2097112,$sp=0x1FFFCC -> memory[0x9FFFCC]=2097112=$fp
+test_lock1.m: $pc=0x80024C(~27): 0x27BE0000: addiu $fp,$sp,0: $fp=2097112,$sp=2097100 -> $fp=2097100
+test_lock1.m: $pc=0x800250(~27): 0x8FC80008: lw $t0,8($fp): $t0=576,$fp=0x1FFFCC -> $t0=576=memory[0x9FFFD4]
+test_lock1.m: $pc=0x800254(~27): 0x00081021: addu $v0,$zero,$t0: $v0=0,$zero=0,$t0=576 -> $v0=576
+test_lock1.m: $pc=0x800258(~27): 0x08000098: j 0x98[0x260]: -> $pc=0x800260
+test_lock1.m: $pc=0x800260(~29): 0x27DD0000: addiu $sp,$fp,0: $sp=2097100,$fp=2097100 -> $sp=2097100
+test_lock1.m: $pc=0x800264(~29): 0x8FBE0000: lw $fp,0($sp): $fp=2097100,$sp=0x1FFFCC -> $fp=2097112=memory[0x9FFFCC]
+test_lock1.m: $pc=0x800268(~29): 0x27BD0004: addiu $sp,$sp,4: $sp=2097100,$sp=2097100 -> $sp=2097104
+test_lock1.m: $pc=0x80026C(~29): 0x8FBF0000: lw $ra,0($sp): $ra=8389136,$sp=0x1FFFD0 -> $ra=8389136=memory[0x9FFFD0]
+test_lock1.m: $pc=0x800270(~29): 0x27BD0008: addiu $sp,$sp,8: $sp=2097104,$sp=2097104 -> $sp=2097112
+test_lock1.m: $pc=0x800274(~29): 0x03E00008: jr $ra: $ra=0x800210 -> $pc=0x800210
+test_lock1.m: $pc=0x800210(~21): 0x24020000: addiu $v0,$zero,0: $v0=576,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x800214(~22): 0x0C00004C: jal 0x4C[0x130]: $ra=0x800210 -> $ra=0x80021C,$pc=0x800130
+test_lock1.m: $pc=0x800130(~1): 0x24020FCF: addiu $v0,$zero,4047: $v0=0,$zero=0 -> $v0=4047
+test_lock1.m: $pc=0x800134(~1): 0x0000000C: syscall
+test_lock1.m: $pc=0x800138(~1): 0x03E00008: jr $ra: $ra=0x80021C -> $pc=0x80021C
+test_lock1.m: $pc=0x80021C(~22): 0x24020000: addiu $v0,$zero,0: $v0=4047,$zero=0 -> $v0=0
+test_lock1.m: $pc=0x800220(~26): 0x27DD0000: addiu $sp,$fp,0: $sp=2097112,$fp=2097112 -> $sp=2097112
+test_lock1.m: $pc=0x800224(~26): 0x8FBE0000: lw $fp,0($sp): $fp=2097112,$sp=0x1FFFD8 -> $fp=0=memory[0x9FFFD8]
+test_lock1.m: $pc=0x800228(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097112,$sp=2097112 -> $sp=2097116
+test_lock1.m: $pc=0x80022C(~26): 0x8FBF0000: lw $ra,0($sp): $ra=8389148,$sp=0x1FFFDC -> $ra=72=memory[0x9FFFDC]
+test_lock1.m: $pc=0x800230(~26): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+test_lock1.m: $pc=0x800234(~26): 0x03E00008: jr $ra: $ra=0x48 -> $pc=0x48
+test_lock1.m: $pc=0x48(~0): 0x27BDFFFC: addiu $sp,$sp,-4: $sp=2097120,$sp=2097120 -> $sp=2097116
+test_lock1.m: $pc=0x4C(~0): 0xAFA20000: sw $v0,0($sp): $v0=0,$sp=0x1FFFDC -> memory[0x9FFFDC]=0=$v0
+test_lock1.m: $pc=0x50(~0): 0x8FA40000: lw $a0,0($sp): $a0=0,$sp=0x1FFFDC -> $a0=0=memory[0x9FFFDC]
+test_lock1.m: $pc=0x54(~0): 0x27BD0004: addiu $sp,$sp,4: $sp=2097116,$sp=2097116 -> $sp=2097120
+5
+test_lock1.m: $pc=0x58(~0): 0x24020FA1: addiu $v0,$zero,4001: $v0=0,$zero=0 -> $v0=4001
+test_lock1.m: $pc=0x5C(~0): 0x0000000C: syscall
+test_lock1.m: exiting with exit code 0 and 0.00MB of mallocated memory
+./selfie: this is selfie's mipster terminating test_lock1.m with exit code 0
+./selfie: profile: total,max(ratio%)@addr(line#),2max(ratio%)@addr(line#),3max(ratio%)@addr(line#)
+./selfie: calls: 46,4(8.69%)@0x110(~1),1(2.17%)@0xF0(~1),0(0.00%)
+./selfie: loads: 75,5(6.66%)@0x50(~1),4(5.33%)@0x250(~27),1(1.33%)@0x224(~26)
+./selfie: stores: 67,5(7.46%)@0x4C(~1),4(5.97%)@0x240(~27),1(1.49%)@0x144(~12)

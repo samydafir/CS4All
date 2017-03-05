@@ -1,0 +1,31 @@
+------------------------------------------------------------------------------------------------
+|	Assignment 5: (spin-lock, condition variables & semaphores)                                |
+------------------------------------------------------------------------------------------------
+	1. spin-lock:
+		for spin-lock we implemented a lock and unlock syscall.
+		If a process is locked and another process tries to lock it 
+		-> it does emit nop for the rest of the cycles 
+		and check every time again if the process is still locked,
+		until the process is unlocked. (busy waiting)
+	2. condition variables:
+		for condition variables we do not emit nop and check again like in
+		1. -> instead we check once if the lock is set and then yield 
+		-> it will then be ignored until the process unlocks again
+		(we have a global variable for switching spin-lock off and on ->spinLock
+		if spinLock == 1 -> spin-lock will be used
+		else condition variables will be used)
+	3. semaphores:
+		We implemented a semaphore_lock() and a semaphore_unlock
+		semaphorelock: here we check for a given adress if it is alredy locked
+	    and if it is not we lock it. We have a linked list with entries for each
+		lock in the source file.
+		semaphore unlock: here we unlock the lock
+		both semaphore methods are in a extra file (external library)
+
+		How to compile selfie with semaphores in extrafile:
+		1: gcc -Wall -m32 -D'main(a,b)=main(a,char**argv)' selfie.c -o selfie 
+		//when you use gcc -> semaphores still have to be in selfie, otherwise gcc won't compile it
+		2: ./selfie -c selfie_for_linking.c semaphores_for_linking.c -o selfie1.m
+		//now you have a linked selfie
+		3: ./selfie -l selfie1.m -m 32 1 -c test_lock.c -o selfie2.m -m 2 5
+		//with this linked selfie you can now compile and run test files

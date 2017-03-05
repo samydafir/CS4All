@@ -1,0 +1,18 @@
+Dynamic reallocation:
+	Änderung zum Assignemtnt 3:
+	Speicher wird nun in eine angegebene Größe von Teile aufgeteilt.
+	Forkt nun ein Prozess wird nach dem nächsten freien Teil gesucht 
+	(Prozess mit trap == 1 -> auch schon beendete Prozesse).
+	Wobei zu Beginn alle Prozesse initialisiert wurden -> trap auf 1 usw.
+	und nur der erste ausgeführt mit -> trap = 0
+	Dies erleichtert das processTable handling.
+
+entdeckte & gelöste Probleme:
+	-addressTranslation: hier war uns am Anfang nicht ganz klar wo wir diese überall brauchen(zB. gp,fp,pc)
+	 aber nach längerem Überlegen und vielen uncaught address errors wurde dieses problem gelöst
+	-debug: nachdem wir mit der implemtierung fertig waren, hatten wir auf einmal wenn wir das debug auführten einen Segmentation Fault
+	 dies lag an einem printInteger der die codezeile ausgab, dass wir noch nicht mit addressTranslation angepasst hatten.
+	 Dann hatten wir bei make test einen Segmentaion Fault und dafür bei debug nicht mehr.
+	 Dies geschah weil make test -s vor  -m ausführt und hier debug kurz auf true gesetzt wird 
+	 -> aber zu diesem Zeitpunkt ist die processTable noch nicht initalisiert
+	 wir konnten dies mit einer abfrage von numberOfProcesses lösen

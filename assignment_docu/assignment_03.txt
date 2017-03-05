@@ -1,0 +1,5 @@
+New powers: (see examples in tests/03/)
+-run mutiple instances of the same binary.
+-implement different behavior based on id (using if id() == certain id).
+-priority sheduling based on process-id (if certain process-id then yield).
+-changed selfie signature such that you always have to say how many processes you would like to run (if you take 1 it runs as usually)
