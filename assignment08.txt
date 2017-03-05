@@ -1,0 +1,20 @@
+Assignment 8:
+Implementation:
+- Removed base, bound
+- Physical Addresses are now retrieved from the page table if they exist.
+  Otherwise a new frame is allocated and mapped in the pageTable (falloc).
+- Created free list for free memory frames. Is not an external list, but
+  the first memory entry in every frame contains the address of the next
+  frame.
+  First free frame is pointed to using a free pointer.
+- Every process has an own pagetable. The pagetable address for each process
+  saved in the process's processTable entry.
+
+What works:
+- paging mechanism works.
+- Frame allocation works. No used frames are reallocated or overwritten.
+
+Problems:
+- Not enough time
+- syscalls somehow not handled correctly
+

@@ -10,16 +10,11 @@ selfie: selfie.c
 
 # Test self-compilation, self-execution, and self-hosting
 test: selfie
-	./selfie -c selfie.c -o selfie1.m -s selfie1.s -m 2 -c selfie.c -o selfie2.m -s selfie2.s
-	diff -q selfie1.m selfie2.m
-	diff -q selfie1.s selfie2.s
-	./selfie -c selfie.c -o selfie.m -m 1 -l selfie.m -m 1
-	./selfie -c selfie.c -o selfie3.m -s selfie3.s -y 2 -l selfie3.m -y 2 -l selfie3.m -y 2 -c selfie.c -o selfie4.m -s selfie4.s
-	diff -q selfie3.m selfie4.m
-	diff -q selfie3.s selfie4.s
-	diff -q selfie1.m selfie3.m
-	diff -q selfie1.s selfie3.s
-	./selfie -c -mob 1
+	./selfie -c selfie.c -o selfie1.m #compile selfie using selfie
+	./selfie -c kernel.c -o kernel.m #compile kernel using selfie
+	./selfie -c userSource.c -o userBinary.m #compile userSource using selfie
+	./selfie -l kernel.m -m userBinary.m 8 3 #execute up to 3 instances of given userBinary
+	./selfie -l kernel.m -m selfie1.m 8 3 #selfie self execution
 
 # Clean up
 clean:

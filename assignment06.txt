@@ -1,0 +1,65 @@
+Assignment 06:
+
+General:
+  In the current state communication between OS and CPU takes place through function-calls.
+  We aim to remove this connection. Communication between OS and CPU should only take place through machine instructions.
+
+CPU:
+- Gets the OS's binary-address (selfie_load) and loads it into memory. Initializes memory and gets cmd-arguments for OS (selfie_run).
+  Sets PC to OS and enters fetch-decode-execute cycle (runUntilException).
+  Interrupt is also thrown by the CPU. ALso loads and restores process states while switching processes.
+  Handles address translation using base & bound of current process (MMU).
+
+OS:
+- Handles all remaining functionality: multitasking (scheduling), os_syscalls (malloc, fork, lock, id, yield). OS-Syscalls are also decoded by
+  the CPU, but the CPU does not handle them. It throws an interrupt and loads the OS which then handles actions like malloc or lock.
+  The interrupt also contains a status code such that the OS can distinguish between a normal interrupt (where it has to schedule the next process)
+  and a os_syscall (execute functionality and switch back to the interrupted process).
+
+New registers:
+- trap: address of the interrupt OS-routine
+- timer: amount of cycles before next interrupt
+- base: start address of memory of current process
+- bound: end address of memory of current process
+- mode: kernel or user-mode
+
+
+Syscalls:
+- some handled by OS (malloc, fork, lock, id, unlock, yield, exit), others by the CPU (read, write, open).
+  All syscalls (number in instruction) read by cpu. CPU-Syscall handled directly by CPU, OS-Syscalls delegated to the OS
+  -> interrupt (save current process, switch to OS, execute syscall, switch back to saved process).
+
+Multitasking:
+- OS handles scheduling: manages process table. Actual next process gets selected by the OS through traversing the process table.
+  The address of the next process is passed to the CPU. The CPU saves the registers currently filled with OS-info and loads all registers
+  starting at the address received from the CPU including the PC -> fetch-decode-execute loop continues at PC of the newly loaded process.
+- OS info itself is also stored in the process table (like any othe process)
+- Switching works as follows: OS finds next process in process table, emits instruction to trigger CPU context switch containing address
+  of current process (OS) and next process in process table (e.g. OP_SWITCH) 
+  -> CPU decodes instruction to get addresses, saves state of current process and loads the state of the next process. (including base- and
+  bound-registers).
+  -> CPU resets timer to initial value (number of instructions to execute before interrupt)
+
+Virtual Memory:
+- The OS stores bases and bound for every process in the process table. The OS tells the CPU which process to load next via e.g. SWITCH instruction
+  containing process table address of process to load saved registers and the OS entry address to save OS-REGs.
+- Base and bound of the current process are stored in dedicated base and bound registers.
+- Then the CPU does the Address Translation for every instruction that accesses the memory by adding the corresponding base to the address in the instruction.
+
+
+Synchronisation:
+- Synchronisation is handled by the OS. The CPU decodes a lock or unlock syscall and throws an interrupt with a status code such that the OS knows that
+  the CPU found a lock/unlock instruction. Locking, updating the semaphore and manipulating the process table entries to lock a process is then done by the OS.
+  The whole locking routine as it exists now is moved to the OS.
+
+Isolation + full memory access for OS: 
+- additional mode-register in CPU such that it can differentiate between user and kernel mode. isValidAddress then additionally checks which mode is 
+  currently active -> user processes get the same access rights as now (can only access their own memory), the OS can access the whole memory and is not
+  restricted to its own address space.
+
+  
+
+
+
+
+

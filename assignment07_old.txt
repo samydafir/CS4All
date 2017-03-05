@@ -1,0 +1,22 @@
+Design Choices
+- Moved syscalls (except read, write, open) to OS. Syscall in user-process triggers context switch to OS-process passing a status-code.
+  Based on the status-code the OS decides which operation (boot, syscalls, interrupt) to handle.
+  OS manages process table (scheduling).
+- Hardware starts and reads cmd-arguments. Loads kernel binary from kernel.m file, writes arguments onto kernel-stack. Sets pc to 
+  start of memory (where OS begins). calls runUntilException() to begin execution of OS-process.
+- OS-process decides to boot based on main argument (statusCode), creates a special process-table entry for itself and saves all
+  registers into that entry.
+- OS-process loads binary specified in passed main-argument as first user process: All required information is written to the processes process-table-entry.
+  All additional processes can only be created through a fork in the user-process.
+- A context switch to the user process is executed: kernel registers are saved into the kernel's process-entry which it manages itself + registers
+  of the user process are restored into the registers + sets pc to begin of user process => user process is executed for the specified timeslice.
+- Once the number of instructions specified in TIMESLICE is is reached an interrupt is called => switch to OS passing statusCode (1) for switch.
+  OS handle the switch: finds next process and tells cpu to load register content from the process table entry into the registers.
+- OsCalls: CPU finds syscall instruction -> context switch to OS passing status code -> OS handles OScall-functionality (writes results to process-table
+  entry of the process containing the syscall) -> context switch back to previously executed process.
+
+
+Problems:
+- Extremely complex: very hard to understand and implement interaction between OS and CPU.
+- Passing arguments to OS's main when booting: spent hours trying to understand up_loadArguments.
+- Simply too much for one assignment (spent over 30 hours!)
